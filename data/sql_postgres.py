@@ -32,7 +32,7 @@ class DbFleetManagement:
                 last_name VARCHAR(100) NOT NULL,
                 cellphone NUMERIC NOT NULL UNIQUE CHECK (cellphone > 9),
                 license NUMERIC NOT NULL UNIQUE,
-                date_create VARCHAR(8) NOT NULL,
+                date_created VARCHAR(8) NOT NULL,
                 state VARCHAR(20) DEFAULT 'active' CHECK(state IN('active', 'inactive'))
                 );
                 """
